@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guanabara</title>
+    <style>
+        .content {
+            box-sizing: border-box;
+            background-color: green;
+            width: 200px;
+            height: 200px;
+        }
+
+        .text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content" >
+        <p class="text">Interaja..</p>
+    </div>
+    
+    <script>
+        var b = document.querySelector(".text")
+        var c = document.querySelector(".content")
+        c.addEventListener("click", clickou)
+        c.addEventListener("mouseenter", entrou)
+        c.addEventListener("mouseout", saiu)
+
+        function clickou() {
+            b.innerText = "Clicou!"
+            c.style.background = "Blue"
+        }
+
+        function entrou() {
+            b.innerText = "Entrou."
+        }
+
+        function saiu() {
+            b.innerText = "Saiu."
+            c.style.background = "Green"
+        }
+    </script>
+</body>
+</html>

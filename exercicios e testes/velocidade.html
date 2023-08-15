@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multas</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+            font: normal 18pt arial;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+        }
+        button {
+            border: solid 1px black;
+            width: 100px;
+            height: 30px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        input {
+            background-color: rgb(226, 226, 226);
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+        }
+
+        input:hover{
+            border: solid 1px green;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        strong {
+            
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        button:active{
+            border: none;
+            border: solid 1px rgb(43, 0, 143);
+            box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.25);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Sistema de Multas</h1>
+    <label for="limite">Limite da via: </label>
+    <input type="number" name="limite" id="limite" placeholder="Velocidade em km/h">
+    <br>
+    <label for="velocidade">Velocidade do carro: </label>
+    <input type="number" name="velocidade" id="velocidade" placeholder="Velocidade em km/h">
+    <button>Verificar</button>
+    <p class="result"></p> 
+    <script src="velocidade.js"></script>
+    
+
+</body>
+</html>

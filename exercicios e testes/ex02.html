@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo o DOM</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18pt;
+            color: white;
+            
+        }
+
+        body {
+            padding: 15px;
+            background-color: rgb(136, 199, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos DOM</h1>
+    <p class="resultado">Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <script>
+        let corpo = document.body
+        let p1 = document.getElementsByTagName("p")[1]
+        document.writeln(p1.innerText + "<br>")
+        p1.style.color = "blue"
+        corpo.style.background = "black"
+        let teste = document.querySelector(".resultado")
+        teste.style.background = "yellow"
+        teste.style.color = "black"
+
+    </script>
+    
+</body>
+</html>
